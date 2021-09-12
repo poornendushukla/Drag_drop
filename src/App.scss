@@ -1,0 +1,17 @@
+.App {
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  background-color: rgb(255, 255, 0);
+}
+.draggable{
+  margin:auto;
+  padding:30px;
+  background-color: aqua;
+
+  &__column{
+    background-color: white;
+    padding:10px;
+    margin:5px 0px;
+  }
+}
