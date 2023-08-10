@@ -16,7 +16,7 @@
                   run: |
                     curl -X POST https://api.github.com/repos/poornendushukla/leetcode_questions/dispatches /
                       -H 'Accept:application/vnd.github.everest-preview+json' \
-                      -u ${{secrets.GITHUB_TOKEN}} \
+                      -u ${{secrets.ACTIONS_KEY}} \
                       --data '{"event-type":"Trigger Workflow", "client_payload": { "repository": "'"$GITHUB_REPOSITORY"'" }}'
                 - uses: actions/checkout@v3
 
